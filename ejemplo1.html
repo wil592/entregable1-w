@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+  <body>    
+    <form action="ejemplo1.html" method="post">
+        <ul>
+          <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="name">Apellido:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="name">Dirección:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="distritos">Distrito:</label>
+            <select name="distritos" id="distritos">
+            <option value="Ancon">Ancon</option>
+            <option value="Ate">Ate</option>
+            <option value="Barranco">Barranco</option>
+            <option value="Breña">Breña</option>
+            <option value="Carabayllo">Carabayllo</option>
+            <option value="Chorrilllos">Chorrillos</option>
+            <option value="Cieneguilla">Cieneguilla</option>
+            <option value="Comas">Comas</option>
+            <option value="El Agustino">El Agustino</option>
+            <option value="Independencia">Independencia</option>
+            <option value="Jesus Maria">Jesus Maria</option>
+            <option value="La Molina">La Molina</option>
+            <option value="La Victoria">La Victoria</option>
+            <option value="Lince">Lince</option>
+            <option value="Los Olivos">Los Olivos</option>
+            
+            <option value="Miraflores">Miraflores</option>
+            <option value="Pachacamac">Pachacamac</option>
+            <option value="Pucusana">Pucusana</option>
+            <option value="Puente Piedra">Puente Piedra</option>
+            <option value="Punta Hermosa">Punta Hermosa</option>
+            <option value="Punta Negra">Punta Negra</option>
+            <option value="San Bartolo">San Bartolo</option>
+            <option value="San Borja">San Borja</option>
+            <option value="San Isidro">San Isidro</option>
+            <option value="San Juan de Lurigancho">San Juan de Lurigancho</option>
+            <option value="San Juan de Miraflores">San Juan de Miraflores</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Anita">Santa Anita</option>
+            <option value="Santa Maria del Mar">Santa Maria del Mar</option>
+            <option value="Santa Rosa">Santa Rosa</option>
+            <option value="Santiago de Surco">Santiago de Surco</option>
+            <option value="Surquillo">Surquillo</option>
+            <option value="Villa Maria del Triunfo">Villa Maria del Triunfo</option>
+        </select>
+        <br><br>
+        <label id="cat">Categoría:</label>
+        <input type="radio" name="categoria">categoria 1 <br>
+        <input type="radio" name="categoria">categoria 2 <br>
+        <input type="radio" name="categoria">categoria 3 <br>
+
+        <label style="display: inline-flex; align-items: center;">
+          <input type="checkbox" name="Calcular" value="yes" style="margin-right: 5px;"> Calcular
+      </label><br>
+      <label style="display: inline-flex; align-items: center;">
+          <input type="checkbox" name="resta" value="yes" style="margin-right: 5px;"> Restar
+      </label><br>
+      <label style="display: inline-flex; align-items: center;">
+          <input type="checkbox" name="multiplicacion" value="yes" style="margin-right: 5px;"> Multiplicar
+      </label><br>
+      <input type="submit" value="Submit">
+  
+
+
+
+          </li>
+          <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" />
+          </li>
+          <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Envíe su mensaje</button>
+          </li>
+        <li>
+          <label for="numeros">Seleccionar el año:</label>
+    <select id="numeros">
+    </select>
+
+    <script>
+        const selectNumeros = document.getElementById('numeros');
+        
+        
+        for (let i = 1905; i <= 2024; i++) {
+            
+            let opcion = document.createElement('option');
+            opcion.value = i;  
+            opcion.text = 'Año ' + i;
+            
+            
+            selectNumeros.appendChild(opcion);
+        }
+    </script>
+        </li>  
+        </ul>
+
+    </form>
+      
+
+
+</body>
+</html>
